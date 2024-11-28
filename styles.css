@@ -1,21 +1,22 @@
-/* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General styling */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, lightgreen, rgb(180, 238, 87));
+    background: linear-gradient(to right, rgb(31, 243, 66), #b6e958);
     color: #333;
+    padding: 20px;
 }
 
 .container {
-    width: 80%;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -25,71 +26,77 @@ header {
 
 h1 {
     font-size: 36px;
-    color: #333;
+    color: #4CAF50;
+}
+.btn{
+  width: 100%;
+  background-color: blue;
 }
 
-.add-book, .book-list {
-    margin-bottom: 40px;
+.add-book {
+    margin-bottom: 30px;
 }
 
-h2 {
+.add-book h2 {
     font-size: 24px;
-    color: #444;
     margin-bottom: 10px;
 }
 
-/* Form styling */
-form input {
-    margin-bottom: 10px;
+.add-book form {
+    display: grid;
+    gap: 15px;
+}
+
+.add-book form input {
     padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     width: 100%;
     max-width: 400px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
 }
 
-form button {
-    padding: 10px 20px;
+.add-book form button {
+    padding: 12px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: not-allowed;
     font-size: 16px;
 }
 
-form button:hover {
-    background-color: #45a049;
+.book-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-/* Book list styling */
 ul {
     list-style-type: none;
 }
 
 ul li {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 15px;
-    border: 1px solid #ddd;
     margin-bottom: 10px;
+    border: 1px solid #ddd;
     border-radius: 4px;
-}
-
-ul li span {
-    display: block;
-    margin-bottom: 5px;
 }
 
 ul li .title {
     font-weight: bold;
     font-size: 18px;
+    color: #333;
 }
 
 ul li .author {
     color: #555;
+    margin-top: 5px;
 }
 
 ul li .year {
     color: #777;
+    margin-top: 5px;
+    font-size: 14px;
 }
+
